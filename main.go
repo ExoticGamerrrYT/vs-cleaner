@@ -140,6 +140,8 @@ func cleanRegistryKeys() {
 // Remove shortcuts from Start Menu and Desktop
 func cleanShortcuts() {
 	shortcuts := []string{
+		filepath.Join(os.Getenv("PROGRAMDATA"), `\Microsoft\Windows\Start Menu\Programs\Visual Studio Installer.lnk`),
+		filepath.Join(os.Getenv("PROGRAMDATA"), `\Microsoft\Windows\Start Menu\Programs\Visual Studio 2022.lnk`),
 		filepath.Join(os.Getenv("APPDATA"), `Microsoft\Windows\Start Menu\Programs\Visual Studio Installer.lnk`),
 		filepath.Join(os.Getenv("APPDATA"), `Microsoft\Windows\Start Menu\Programs\Visual Studio 2022.lnk`),
 		filepath.Join(os.Getenv("USERPROFILE"), `Desktop\Visual Studio Installer.lnk`),

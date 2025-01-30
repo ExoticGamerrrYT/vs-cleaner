@@ -1,4 +1,6 @@
-## Comandos útiles
+# Visual Studio Cleaner Tool by Exotic :rocket::broom:
+
+## Commands
 
 `go run main.go`: Ejecuta tu programa sin compilarlo.
 
